@@ -1,76 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Come Back Later</title>
-  <style>
-  
-body {
-    background: #081421;
-    color: #d3d7de;
-    font-family: "Courier new";
-    font-size: 18px;
-    line-height: 1.5em;
-	cursor: default;
-}
-
-a {
-	color: #fff;
-}
-
-.code-area {
-    position: absolute;
-    width: 320px;
-	min-width: 320px;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.code-area > span {
-    display: block;
-}
-
-@media screen and (max-width: 320px) {
-    .code-area {
-		font-size: 5vw;
-		min-width: auto;
-        width: 95%;
-		margin: auto;
-		padding: 5px;
-		padding-left: 10px;
-		line-height: 6.5vw;
-    }
-}
-   </style>
-
+    <meta charset="UTF-8">
+    <title>Hunt Computer Software</title>
+    <style>
+        body {
+            background: #081421;
+            color: #d3d7de;
+            font-family: "Courier New", monospace;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .code-block {
+            background: rgba(13, 29, 44, 0.5);
+            border: 1px solid #2796ec;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .project {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: 1px solid #4ca8ef;
+            margin-bottom: 10px;
+        }
+        .project:hover {
+            transform: scale(1.02);
+        }
+        .project-image {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+        .syntax-keyword { color: #d65562; }
+        .syntax-type { color: #2796ec; }
+        .syntax-string { color: #a6a61f; }
+        .syntax-comment { color: #777; font-style: italic; }
+        .syntax-bracket { color: #4ca8ef; }
+    </style>
 </head>
 <body>
-<div class="code-area">
-  <span style="color: #777;font-style:italic;">
-    // Page Comming Soon.
-  </span>
-  <span>
-    <span style="color:#d65562;">
-      if
-    </span>
-	  (<span style="color:#4ca8ef;">!</span><span style="font-style: italic;color:#bdbdbd;">found</span>)
-    {
-  </span>
-  <span>
-    <span style="padding-left: 15px;color:#2796ec">
-       <i style="width: 10px;display:inline-block"></i>throw
-    </span>
-    <span>
-      (<span style="color: #a6a61f">"(╯°□°)╯︵ ┻━┻"</span>);
-    </span>
-	  <span style="display:block">}</span>
-	  <span style="color: #777;font-style:italic;">
-		  // <a href="https://hos-os.github.io/HuntComputerSoftware.github.io/">Go home!</a>
-	  </span>
-  </span>
-</div>
+    <div class="code-block">
+        <span class="syntax-keyword">class</span> DeveloperPortfolio <span class="syntax-bracket">{</span>
+        <div style="padding-left: 20px;">
+            <div class="syntax-comment">// Personal information and core skills</div>
+            <span class="syntax-type">constructor</span><span class="syntax-bracket">()</span> <span class="syntax-bracket">{</span>
+                <div style="padding-left: 20px;">
+                    <span class="syntax-type">this</span>.name = <span class="syntax-string">"Hunter Null"</span>;
+                    <span class="syntax-type">this</span>.skills = [
+                        <span class="syntax-string">"JavaScript"</span>, 
+                        <span class="syntax-string">"Python"</span>,
+                        <span class="syntax-string">"Electron"</span>,
+                        <span class="syntax-string">"TypeScript"</span>,   
+                        <span class="syntax-string">"Php"</span>,    
+                        <span class="syntax-string">"C#"</span>
+                    ];
+                </div>
+            <span class="syntax-bracket">}</span>
+        </div>
+        <span class="syntax-bracket">}</span>
+    </div>
 
+    <div class="code-block">
+        <span class="syntax-type">const</span> projects = [
+        <div style="padding-left: 20px;">
+            <a href="https://github.com/HOS-OS/Barcode-Gen" style="text-decoration: none; color: inherit;">
+                <div class="project">
+                    <span class="syntax-type">Project</span> One <span class="syntax-bracket">{</span>
+                    <div style="padding-left: 20px;">
+                        title: <span class="syntax-string">"BarCode Gen"</span>,
+                        description: <span class="syntax-string">"A simple barcode generator for small businesses"</span>,
+                        technologies: [
+                            <span class="syntax-string">"Javascript"</span>, 
+                            <span class="syntax-string">"Css"</span>, 
+                            <span class="syntax-string">"Html"</span>
+                       ]
+                        <img src="https://github.com/HOS-OS/Barcode-Gen/blob/main/appicons/icon.png?raw=true" alt="Web Application" class="project-image">
+                    <span class="syntax-bracket">}</span>
+                </div>
+                </div>
+            </a>
+            <a href="https://github.com/HOS-OS/Acorn" style="text-decoration: none; color: inherit;">
+                <div class="project">
+                    <span class="syntax-type">Project</span> Two <span class="syntax-bracket">{</span>
+                    <div style="padding-left: 20px;">
+                        title: <span class="syntax-string">"Acorn Browser"</span>,
+                        description: <span class="syntax-string">"A simple"</span>,
+                        technologies: [
+                            <span class="syntax-string">"Javascript"</span>, 
+                            <span class="syntax-string">"TailWinds CSS"</span>, 
+                            <span class="syntax-string">"Html"</span>
+                        ]
+                        <img src="https://github.com/HOS-OS/Acorn/raw/c77c993bad477728fc5fb697c4599290e9b8ab13/appicons/acorn.png" alt="Machine Learning Tool" class="project-image">
+                    <span class="syntax-bracket">}</span>
+                </div>
+                </div>
+            </a>
+            <a href="https://github.com/HOS-OS/Vsearch" style="text-decoration: none; color: inherit;">
+                <div class="project">
+                    <span class="syntax-type">Project</span> Three <span class="syntax-bracket">{</span>
+                    <div style="padding-left: 20px;">
+                        title: <span class="syntax-string">"Vsearch"</span>,
+                        description: <span class="syntax-string">"A simple web search engine and web crawler"</span>,
+                        technologies: [
+                            <span class="syntax-string">"PhP"</span>, 
+                            <span class="syntax-string">"CSS"</span>, 
+                            <span class="syntax-string">"JS"</span>
+                        ]
+                        <img src="https://raw.githubusercontent.com/HOS-OS/Vsearch/refs/heads/main/assets/images/logo.png" alt="Machine Learning Tool" class="project-image">
+                    <span class="syntax-bracket">}</span>
+                </div>
+                </div>
+            </a>
+
+        </div>
+        <span class="syntax-bracket">]</span>
+    </div>
+
+    <div class="code-block">
+        <span class="syntax-type">function</span> contactMe<span class="syntax-bracket">()</span> <span class="syntax-bracket">{</span>
+        <div style="padding-left: 20px;">
+            <span class="syntax-type">return</span> <span class="syntax-bracket">{</span>
+                email: <span class="syntax-string">"huntcomputerit@gmail.com"</span>,
+                github: <span class="syntax-string">"github.com/HOS-OS"</span>,
+                linkedin: <span class="syntax-string">"linkedin.com/in/hunter-null-9a5889238/"</span>
+            <span class="syntax-bracket">}</span>;
+        </div>
+        <span class="syntax-bracket">}</span>
+    </div>
 </body>
 </html>
